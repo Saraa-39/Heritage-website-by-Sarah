@@ -1,0 +1,236 @@
+* {box-sizing: border-box}
+body {; margin:0}
+.mySlides {display: none}
+body { margin:0}
+.mySlides {display: none}
+*,
+*::before,_
+*::after,_
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: cursive;
+    font-size: 10px;
+    
+}
+header{
+         background-color:#FAF0E6;
+        height:30px;
+    margin-bottom: 800px;
+    
+        
+    }  
+ header ul{
+       float: right;
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        border: none;
+    
+        
+    }
+    header ul li {
+        float:right;
+        font-size: 2rem;
+    }
+    header ul li a {
+        display:block;
+        padding: 2px;
+        font-size: 1.1em;
+        text-decoration: none;
+    
+    }
+    header ul li a:hover {
+        background:#d7b48e;
+        transition: 0.5s;
+        
+    }
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position:relative;
+  margin: auto;
+      width: 100%;
+    max-width: 98rem;
+    padding: 5rem;
+    background-color: #fff;
+    box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    border-radius: .8rem;
+}
+img{
+    width: 100%;
+    
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background-color: #eee;
+    padding: 0 1.5rem;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 20px;
+  margin-top: 50px;
+  color: gray;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.bti{
+    min-width: 50rem;
+    max-width: 50rem;
+    height: 30rem;
+    transform: translateX(-8rem);
+    position: relative;
+}
+.bti img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: .8rem;
+    
+}
+.bti img::before{
+    content: '';
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background: linear-gradient(to right, rgba(79,172,254,.8),
+        rgba(0,242,254,.8));
+    box-shadow: .5rem .5rem 3rem 1px rgba(0,0,0,.05);
+    border-radius: .8rem;
+}
+
+.btTitle{
+    text-align: center;
+    margin-bottom: 20rem;
+    font-size: 3.5rem;
+    margin: 1.5rem 0 2rem;
+    color:burlywood;   
+}
+.btText{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size:2rem;
+    color:rgba(0,0,0,.7);  
+     margin-left: auto;
+ display: block;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+    
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.cta{
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size:1.2rem;
+    color:#fff;
+    background-image:linear-gradient(to right, #4facfe 0%,#00f2fe 100%);
+    border-radius: .8rem; 
+    text-decoration: none;
+    
+}
+.cta:hover{
+     background-image:linear-gradient(to right, #00f2fe  0%,#4facfe 100%);
+    
+}
+@media screen and(max-width:1068px){
+    .bt{
+        max-width: 80rem;
+        
+    }
+    .bti{
+        min-width: 30rem;
+        max-width: 30rem;
+        
+    }
+}
+
+@media screen and(max-width:868px){
+    .bt{
+        max-width: 70rem;
+    }
+}
+
+@media screen and(max-width:768px){
+  .bt{
+       padding: 2.5rem;
+        flex-direction: column;
+    }
+    .bti{
+        min-width: 100%;
+        max-width:100%;
+        transform: translate(0,-8rem);
+        
+    }
+}

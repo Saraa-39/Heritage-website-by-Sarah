@@ -1,0 +1,94 @@
+<html lang="ar">
+
+<head> <link rel="stylesheet" href="SA.css">
+    </head>
+
+<body>
+<header>
+    <ul class="nav">
+       
+          <li> <a href="NewPage.html"> الصفحة الرئيسية</a></li>
+      </ul></header>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+    <div class="bti">
+        <img src="H1.jpeg" style="width:55%"></div>
+      <div class="info">
+          <h1 class="btTitle">تُراث فلسطين</h1>
+        <P class="btText">التراث الفلسطيني هو المخزون التاريخي للشعب الفلسطيني، وهذا التراث ناتج عن التجارب التي خاضها الأجداد الذين سكنوا أرض فلسطين عبر العصور التاريخية، فالأجيال السابقة لخصت تجاربها بالعادات والتقاليد والقيم المجتمعية الثقافية التي توارثتها الأجيال
+</P>
+ 
+</div>
+    
+    </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+    <div class="bti">
+        <img src="H2.jpg" style="width:55%"></div>
+      <div class="info">
+          <h1 class="btTitle">الزي الفلسطيني  </h1>
+        <P class="btText">الزّي الفلسطيني هو حامل للهوية الثقافية الفلسطينية وشاهد على التاريخ الفلسطيني، وقد أصبحت الكوفية البيضاء المقلمة بالأسود اليوم، رمزًا وطنيًا يرمز لنضال الشعب الفلسطيني؛ ولذلك أصبح لهذا الزي دور كبير في التعبير عن موقف مرتديه</P>
+      <a text-align: center;
+href="PAClothesH.html" class="cta">إقرأ المزيد</a>
+
+</div>
+    </div>
+    
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+    <div class="bti">
+        <img src="H3.jpg" style="width:55%"></div>
+      <div class="info">
+          <h1 class="btTitle">أشهر الأكلات الشعبية الفلسطينية</h1>
+        <P class="btText"> يعتبر المطبخ الفلسطيني من المطابخ العربية الشرقية المهمّة التي تمثل أحد أهم و أعرق مطابخ بلاد الشام. ويتميّز بأطباقه التقليدية اللذيذة، وقد تأثر بثلاث ثقافات أساسية عبر التاريخ، وهي ثقافة العرب والفرس والأتراك</P>
+<a text-align: center;
+href="foodh.html" class="cta">إقرأ المزيد</a>
+
+</div>
+    </div>
+    
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    </body>
+</html>

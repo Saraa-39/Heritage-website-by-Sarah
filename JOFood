@@ -1,0 +1,156 @@
+<html>
+<head>
+    <title>الأكلات الأردنية</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            
+        }
+        
+        html{
+            
+        }
+        section{
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fddcc356;
+            
+        }
+        .container{
+            width:80%;
+            max-width: 670px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+        }
+        .left{
+            width:600%;
+            height: 600px;
+            background: url(./8c591b1d6fe1f236a3dfad16921e10f3.jpg) no-repeat center/cover;
+            border-radius: 8px;
+        }
+          .left1{
+            width:700px;
+            height: 500px;
+            background: url(./a1b32f9a-a37b-4fd9-89be-220a9fadd096.jpg) no-repeat center/cover;
+            border-radius: 8px;
+        }
+        .left2{
+            width:320%;
+            height: 500px;
+            background: url(./831c205e-94c9-4e94-9792-723d05cbfb43.jpg) no-repeat center/cover;
+            border-radius: 8px;
+        }
+        
+
+        .right{
+            width:150%;
+            min-height: 75px;
+            background-color:#2f3d3c;
+; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            border-radius: 8px;
+            color: white;
+            margin-left: -50px;
+            margin-bottom: -100px;
+            
+        }
+        
+        .right h1{
+            font-size: 40px;
+            font-weight: lighter;
+        }
+        .right p{
+            margin:20px 0;
+            font-weight: 500;
+            line-height: 25px;   
+        }
+        
+    
+    
+    
+    
+    
+    
+    
+    </style>
+    </head>
+<body>
+    <section>
+    <div class="container">
+       <div class="left"></div> 
+        <div class="right">
+            <div class="content">
+                <h1>المنسف</h1>
+                  
+        
+  <p>   هو ثريد لحم الضأن بلبنها والخبز والقمح البلدي أو الأرز. وهو أشهر وجبات الأردن
+<br>
+ 
+       
+            </div>
+        </div>
+        </div>
+    </section>
+    <!------------------------------------------------------>
+    
+    <section>
+    <div class="container">
+       <div class="left1"></div> 
+        <div class="right">
+            <div class="content">
+                <h1>القهوة الأردنية السوداء </h1>
+              <p>   كانت الأردن قديمًا إحدى البلدان الهامة في تجارة القهوة  وسرعان ما أصبحت القهوة جزءًا من الثقافة الأردنية، وتقوم القبائل البدوية بإعدادها بالطريقة التقليدية إلى يومنا هذا.
+<br>
+            </div>
+        </div>
+        </div>
+    
+    </section>
+    <!--------------------------------------------->
+   
+        <section>
+    <div class="container">
+       <div class="left2"></div> 
+        <div class="right">
+            <div class="content">
+                <h1>المجدرة  </h1>
+              <p>   هي اكلات شعبيه اردنية قديمة تحظى بشعبيّة كبيرة، وهو طبق صحّيّ مليء بالبروتين، كما أنّه سهل التّحضير، يتكوّن من الأرزِّ والعدس والتّوابل
+<br>
+            </div>
+        </div>
+        </div>
+    </section>
+       
+        
+
+
+    
+    
+    
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

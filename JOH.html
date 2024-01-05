@@ -1,0 +1,94 @@
+<html lang="ar">
+
+<head> <link rel="stylesheet" href="JOH.css">
+    </head>
+
+<body>
+<header>
+    <ul class="nav">
+       
+          <li> <a href="NewPage.html"> الصفحة الرئيسية</a></li>
+      </ul></header>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+    <div class="bti">
+        <img src="JOH1.jpg" style="width:55%"></div>
+      <div class="info">
+          <h1 class="btTitle">تُراث المملكة الأردنية الهاشمية</h1>
+        <P class="btText">يتميّز الأردن بتنوّع الثقافاتِ التي تنسجم معاً ضمن بيئة من التسامح والاحترام، فالمجتمع الأردني مزيج من الأردنيين، والفلسطينيين، والأرمن، والشركس، والأكراد، وغيرهم، ويَشتهر شعبه بكونه شعباً مضيافاً، يحترم عاداته وتقاليده
+</P>
+ 
+</div>
+    
+    </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+    <div class="bti">
+        <img src="JOH2.jpg" style="width:55%"></div>
+      <div class="info">
+          <h1 class="btTitle">الزي الأردني  </h1>
+        <P class="btText">يمثل جزءا مهما من تاريخ وهوية وثقافة الشعب الأردني ونتاجه الحضاري عبر القرون. وبالرغم من صغر مساحة الأردن نسبيا، إلا أن الأزياء الأردنية تتميز بأصالتها وبتنوعها الكبير جدا</P>
+      <a text-align: center;
+href="JOClothes.html" class="cta">إقرأ المزيد</a>
+
+</div>
+    </div>
+    
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+    <div class="bti">
+        <img src="JOH3.jpg" style="width:55%"></div>
+      <div class="info">
+          <h1 class="btTitle">أشهر الأكلات الشعبية الأردنية</h1>
+        <P class="btText">المأكولات الشعبية في الأردن متنوعة توابل ذات الجودة الكبيرة والمحتويات الطازجة وثقافة الطعام الثرية ، يقدم لك طعام شهي لذيذ لاتستطيع مقاومته</P>
+<a text-align: center;
+href="JOFood.html" class="cta">إقرأ المزيد</a>
+
+</div>
+    </div>
+    
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+<html lang="ar">
+
+<head> <link rel="stylesheet" href="MO.css">
+    </head>
+
+<body>
+<header>
+    <ul class="nav">
+       
+          <li> <a href="NewPage.html"> الصفحة الرئيسية</a></li>
+      </ul></header>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+    <div class="bti">
+        <img src="MOMap.png" style="width:100%"></div>
+      <div class="info">
+          <h1 class="btTitle">تُراث المغرب </h1>
+        <P class="btText">لكل مجتمع جذور تاريخية يمثلها تراثه الحضاري ،يعكس تنوع التراث المستوى الحضاري للشعوب، مما يدعو للحفاظ عليه و تطويره،ويعتبر المغرب من أكثر الدول المحافظة على تراثها الوطني والعالمي</P>
+ 
+</div>
+    
+    </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+    <div class="bti">
+        <img src="MO1 (2).jpg"></div>
+      <div class="info">
+          <h1 class="btTitle">الزي المغربي الشعبي</h1>
+        <P class="btText">اللباس التقليدي المغربي هو مجموعة الألبسة التراثية والشعبية التي حافظ ومازال يحافظ عليها المغاربة منذ قرون، حيث يظهر جليا تشبثهم بمختلف الألبسة التقليدية خاصة في الأعراس والمناسبات الدينية شيوخا كانوا أم شبابا، ذكورا أم إناثا. ومما لا شك فيه ان الزي التقليدي جزء لا يتجزأ من التراث، والتراث واحد من المقومات اللازمة لتشييد الحضارة، فهو ضروري لتطوّر الحضارة، حيث إن الزي التقليدي أداة تعريف الأمم ورمز لتميزها وتفردها وهو خير شاهد على درجة وعيها وعلى تنوّع الحضارات المتعاقبة عليها</P>
+  <a href="MOClothes.html" class="cta">إقرأ المزيد</a>
+</div>
+    </div>
+    
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+    <div class="bti">
+        <img src="MOFOod1.jpg" style="width:100%"></div>
+      <div class="info">
+          <h1 class="btTitle">أشهر الأكلات الشعبية المغربية </h1>
+        <P class="btText">المطبخ المغربي يحتل مكانة عالميا يعد الأول عربيا وأفريقيا، والثاني عالميا بعد فرنسا <br>وأهم ما يميز الأكل المغربي هو الأكلات الشعبية والتي عرفها المغاربة على اختلاف الأماكن وأصبحت ثابتة وتوجد في كل بيت مغربي</P>
+           <a href="MOFood.html" class="cta">إقرأ المزيد</a>
+       
+ 
+    </div>
+    </div>
+    
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+    
+</div>
+    
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    </body>
+</html> 

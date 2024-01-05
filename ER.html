@@ -1,0 +1,94 @@
+<html lang="ar">
+
+<head> <link rel="stylesheet" href="ER.css">
+    </head>
+
+<body>
+<header>
+    <ul class="nav">
+       
+          <li> <a href="NewPage.html"> الصفحة الرئيسية</a></li>
+      </ul></header>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+    <div class="bti">
+        <img src="ERmap.jpeg" style="width:100%"></div>
+      <div class="info">
+          <h1 class="btTitle">تراث الإمارات العربية المتحدة</h1>
+        <P class="btText">تزخر دولة الإمارات بإرث عربي وإسلامي كبير، نراه في عادات وتقاليد وسلوكيات شعبها، والآثار الإسلامية والعربية، التي بقيت شاهدة على تاريخ الدولة. أقامت دولة الإمارات المتاحف والفعاليات الثقافية للحفاظ على هذا الإرث للأجيال القادمة. تعرف في هذه الصفحة على ملامح التاريخ الإسلامي والعربي، وجهود الدولة للحفاظ عليه</P>
+ 
+</div>
+    
+    </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+    <div class="bti">
+        <img src="ER3.jpeg"></div>
+    
+      <div class="info">
+          <h1 class="btTitle">الزي الوطني الإماراتي </h1>
+        <P class="btText">هو رمز للفخر والهوية الإماراتية ، والذى تم تصميمه لتوفير الراحة فضلا عن الإلتزام بالمعتقدات الدينية ، حيث يرتدى الرجال ثوبا فضاض يصل طوله للكاحل وهو مصنوعمن القطن الأبيض ، ويطلق عليه اسم الكندورة أو الدشداشة ، فضلا عن غطاء الرأس الذى يطلق عليه الغترة ويثبتها بالعقال ، أما بالنسبة للزى الوطنى للسيدات فيتمثل فى الرداء الأسود الويل والعباية فضلا عن الزى التقليدى الطويل والمعروف بمسمى الجلابية فضلا عن الشال وهو وشاح أسود طويل يوضع على الشعر </P>
+  <a href="ERClothes.html" class="cta">إقرأ المزيد</a>
+</div>
+    </div>
+    
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+    <div class="bti">
+        <img src="ER4.jpeg" style="width:100%"></div>
+      <div class="info">
+          <h1 class="btTitle"> أشهر الأكلات الشعبية الإماراتية</h1>
+        <P class="btText">عندما تمتزج رائحة البهارات الفاخرة مع عبق التاريخ الأصيل، ونرى أبهى صور الكرم والجود مقترنةً بالموائد، نتأكد بأن هذا هو المطبخ الإماراتي العريق. يرتبط المطبخ الإماراتي بشكل كبير بالبيئة التي نشأ فيها من حيث السمات والنكهات، إذ تتميز الموائد الإماراتية بحسن الضيافة والتي تعتبر واحدة من أبرز سمات الإماراتيين والتي توارثها الأبناء أباً عن جد
+            </P>
+           <a href="erfood.html" class="cta">إقرأ المزيد</a>
+       
+ 
+</div>
+    </div>
+    
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+    
+</div>
+    
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    </body>
+</html>

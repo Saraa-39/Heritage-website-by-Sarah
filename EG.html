@@ -1,0 +1,95 @@
+<html lang="ar">
+
+<head> <link rel="stylesheet" href="SA.css">
+    </head>
+
+<body>
+<header>
+    <ul class="nav">
+       
+          <li> <a href="NewPage.html"> الصفحة الرئيسية</a></li>
+      </ul></header>
+    
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+    <div class="bti">
+        <img src="EGG.jpg" style="width:100%"></div>
+      <div class="info">
+          <h1 class="btTitle">تراث مصر</h1>
+        <P class="btText">يتضمن التراث المصري مجموعات من القيم الثقافية، والتقدم التكنولوجي، والهندسة، واللغة، والفن. وقد انتقل هذا الإرث إلى الحضارات المجاورة التي تأثرت بالحضارة المصرية القديمة مثل الحضارة الكوشية والحضارة اليونانية ومنها إلى الحضارة الرومانية ثم الحضارة الغربية وبهذا تكون مصر قد تركت تأثير حضاري بشكل مباشر وغير مباشر على حضارات العالم القديم والحديث</P>
+ 
+</div>
+    
+    </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+    <div class="bti">
+        <img src="EGClothes.jpg"></div>
+    
+      <div class="info">
+          <h1 class="btTitle">الأزياء الشعبية في مصر</h1>
+        <P class="btText">الأزياء الشعبية في مصر عرفت نمطا محددا ومختلفا في كل منطقة  شكلت روح هويتها الثقافية في اللباس. فنجد ان الأزياء في الصعيد غيرها في الوجه البحري، ومختلفة عنها في المحافظات الساحلية.
+
+اختلف االزي الشعبي المصري على مدى العصور، كما أنَّ لكلّ محافظة أو إقليم في مصر، ملبسه الخاص، والذي يتغير كذلك على مدى العصور. وفي فترات سابقة وضع القوانين لتوحيد الزي لكنها سقطت بعد فترة، كالطربوش الذي دخل إلى مصر مع العثمانيين، وكان زياً شعبياً انتهى مع انتهاء العصر الملكي، وفي محاولة منه لجعلها زياً موحداً للمصريين، واقترح الرئيس انور السادات البدلة الشعبية، وهي بدلة صيفية خفيفة مصنوعة من الكتان بجيوب كبيرة، انتشرت فترة ثم اختفت.</P>
+  <a href="EGClothes.html" class="cta">إقرأ المزيد</a>
+</div>
+    </div>
+    
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+    <div class="bti">
+        <img src="koshari.jpg" style="width:100%"></div>
+      <div class="info">
+          <h1 class="btTitle"> الطعام المصري الشعبي</h1>
+        <P class="btText">المطبخ المصري دائمًا في تطور مستمر من وجباته ومن الشيفات المتخصصه في طبخ أشهى الاكلات ، تعد الأكلات المصرية متميزة بسهولة تحضيرها وسهولة المقادير والمكونات التي تعطي نتيجة طيبة وشهية في النهاية .</P>
+           <a href="EGFood.html" class="cta">إقرأ المزيد</a>
+       
+ 
+</div>
+    </div>
+    
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+    
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    </body>
+</html>

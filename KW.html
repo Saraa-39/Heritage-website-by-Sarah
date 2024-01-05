@@ -1,0 +1,94 @@
+<html lang="ar">
+
+<head> <link rel="stylesheet" href="Kw.css">
+    </head>
+
+<body>
+<header>
+    <ul class="nav">
+       
+          <li> <a href="NewPage.html"> الصفحة الرئيسية</a></li>
+      </ul></header>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+    <div class="bti">
+        <img src="KWR.jpeg" style="width:100%"></div>
+      <div class="info">
+          <h1 class="btTitle">تراث دولة الكويت</h1>
+        <P class="btText">لتراث الشعبي بمفهومه العام يتضمن جميع مواد الثقافة الموروث المادية واللامادية من معتقدات وعادات وتقاليد وفنون شعبية ، بالاضافة الى انواع من الابداع الشعبي ووسائله والآداب والفنون التعبيرية والموسيقى والفنون التشكيلية ، وكل ما انجزه الانسان من فنون تطبيقية وصناعات ذات قيمة خلال مسيرته الثقافية</P>
+ 
+</div>
+    
+    </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+    <div class="bti">
+        <img src="KWR1.jpeg"></div>
+    
+      <div class="info">
+          <h1 class="btTitle">زي دولة الكويت</h1>
+        <P class="btText">تعتز الشعوب الخليجية بأزيائها التقليدية وتعتبرها واجهة تحمل وتتضمن هويتها الوطنية وتتميز كل دول المجلس بثيابها ومنها دولة الكويت التي نلقي لمحة حولها متطرقين الى الزي الشعبي النسائي و الرجالي وتطورهما مع مرور الزمن مع احتفاظهما بالتقليدية والهوية. </P>
+  <a href="KWClothes.html" class="cta">إقرأ المزيد</a>
+</div>
+    </div>
+    
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+    <div class="bti">
+        <img src="KWR2.jpeg" style="width:100%"></div>
+      <div class="info">
+          <h1 class="btTitle"> أشهر الأكلات الشعبية الكويتية</h1>
+        <P class="btText">يعتبر المطبخ الكويتي من أعرق المطابخ في الوطن العربي، كما أن أكلاته لذيذة وشهية، ومن بينها والمجبوس الكويتي، والكبسة، والعديد من الأكلات التي تعرف بالمذاق الشهي.
+            </P>
+           <a href="KWFood.html" class="cta">إقرأ المزيد</a>
+       
+ 
+</div>
+    </div>
+    
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+    
+</div>
+    
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    </body>
+</html>

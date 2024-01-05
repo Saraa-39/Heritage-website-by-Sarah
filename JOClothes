@@ -1,0 +1,153 @@
+<html>
+<head>
+    <title>الزي الأردني</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            
+        }
+        
+        html{
+            
+        }
+        section{
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fddcc356;
+            
+        }
+        .container{
+            width:80%;
+            max-width: 670px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+        }
+        .left{
+            width:600%;
+            height: 700px;
+            background: url(./116544_11_1437047926.jpg) no-repeat center/cover;
+            border-radius: 8px;
+        }
+          .left1{
+            width:400px;
+            height: 500px;
+            background: url(./dML-f_Zg4xeNxe0vv_uxMQAAAA.jpg) no-repeat center/cover;
+            border-radius: 8px;
+        }
+        .left2{
+            width:320%;
+            height: 500px;
+            background: url(./440px-P%C3%A9tra_24.jpg) no-repeat center/cover;
+            border-radius: 8px;
+        }
+        
+
+        .right{
+            width:150%;
+            min-height: 75px;
+            background-color:#2f3d3c;
+; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            border-radius: 8px;
+            color: white;
+            margin-left: -50px;
+            margin-bottom: -100px;
+            
+        }
+        
+        .right h1{
+            font-size: 40px;
+            font-weight: lighter;
+        }
+        .right p{
+            margin:20px 0;
+            font-weight: 500;
+            line-height: 25px;   
+        }
+        
+    
+    
+    
+    
+    
+    
+    
+    </style>
+    </head>
+<body>
+    <section>
+    <div class="container">
+       <div class="left"></div> 
+        <div class="right">
+            <div class="content">
+                <h1>الزي الأردني الرسمي للرجال</h1>
+                  
+        
+
+ 
+       
+            </div>
+        </div>
+        </div>
+    </section>
+    <!------------------------------------------------------>
+    
+    <section>
+    <div class="container">
+       <div class="left1"></div> 
+        <div class="right">
+            <div class="content">
+                <h1>الثوب الأردني للنساء </h1>
+              
+            </div>
+        </div>
+        </div>
+    
+    </section>
+    <!--------------------------------------------->
+   
+        <section>
+    <div class="container">
+       <div class="left2"></div> 
+        <div class="right">
+            <div class="content">
+                <h1> زي الضباط الرسمي  </h1>
+              
+            </div>
+        </div>
+        </div>
+    </section>
+       
+        
+
+
+    
+    
+    
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

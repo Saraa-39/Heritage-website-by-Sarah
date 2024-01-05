@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     background-color: #eee;
+   font-family: 'Mada', sans-serif;
+    background : 
+   background-repeat: no-repeat;
+    background-size: 1500px 950px;
+}
+
+  header{
+         background-color:#FAF0E6;
+        height: 66px;
+        
+    }  
+    header * {
+        color:black;
+    }
+    
+    header .logo{
+        float:left;
+        height: inherit;
+        margin-left: 2em;
+       
+       
+    }
+    header .logo-text{
+        margin: 0px;
+        padding: 0;
+        
+    }
+    header .logo-text span{
+        color: brown;
+    }
+    header ul{
+       float:right;
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        border: none;
+        
+        
+    }
+    header ul li {
+        float:right;
+        font-size: 2rem;
+    }
+    header ul li a {
+        display: block;
+        padding: 21px;
+        font-size: 1.1em;
+        text-decoration: none;
+        
+    }
+    header ul li a:hover {
+        background:#d7b48e;
+        transition: 0.5s;
+        
+    }
+ 
+html{
+    font-size: 10px;
+    
+}
+
+
+.C{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    margin: 4rem;
+    text-align: center;
+}
+
+h1{
+    color: black;
+    font-size: 5rem;
+    font-weight: 700;
+   
+    margin-bottom: 2rem;
+    margin-right: 30rem;
+    font-family: 'Aref Ruqaa', serif;
+}
+
+.i{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 30rem;
+    
+}
+p {
+    font-size: 3rem;
+    color: black;
+    line-height: 6rem;
+    margin-bottom: 0rem;
+    margin-right: 30rem;
+    background-image:linear-gradient(to right,#f2e6d9,#f2e6d9);
+    border-radius: 100px;
+    padding: 30px 99px;
+    
+}
+.btn{
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+    background: #A18974;
+    font-size: 3rem;
+    text-decoration:none;
+    color:black;
+    border-radius: 1000px;
+    transition: background 0.5s;
+    margin-right: 30rem;
+    margin-top: 7rem;
+      margin-bottom: 30rem;
+    
+}
+.btn :hover{
+    background: #011111;
+   
+    
+}
+.j{
+    margin-left: 500px;
+    width: 100%;
+    padding: 333px 99px;
+}
+.dt{
+    text-align: center;
+    padding: 300px 99px;
+    margin-left: 600px;
+    width: 1500px;
+    padding: 333px 99px;
+}
+
+
+
+

@@ -1,0 +1,99 @@
+<html lang="ar">
+
+<head> <link rel="stylesheet" href="SYY.css">
+    </head>
+
+<body>
+<header>
+    <ul class="nav">
+       
+          <li> <a href="NewPage.html"> الصفحة الرئيسية</a></li>
+      </ul></header>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+    <div class="bti">
+        <img src="m5.jpg" style="width:100%; "></div>
+      <div class="info">
+          <h1 class="btTitle"> تُراث سوريا </h1>
+        <P class="btText">يشكل التراث الشعبي السوري بفروعه المختلفة وبيئاته المتنوعة وحدة ثقافية متكاملة شكلها السوريون عبر تاريخ بلادهم الطويل التي تفردت بغنى تراثها المادي واللامادي وامتلكت إرثاً ثرياً يعكس تنوع المجتمع السوري
+
+
+</P>
+ 
+</div>
+    
+    </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+    <div class="bti">
+        <img src="SYA2.jpg"></div>
+    
+      <div class="info">
+          <h1 class="btTitle">الزي السوري الشعبي</h1>
+        <P class="btText">اللباس التقليدي السوري أو الأزياء السورية جزء من ثقافة الشعب السوري وتراثه الشعبي على امتداد تواجده في سوريا</P>
+  <a href="SYClothes.html" class="cta">إقرأ المزيد</a>
+</div>
+    </div>
+    
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+    <div class="bti">
+        <img src="SYF.jpg" style="width:100%"></div>
+    
+      <div class="info">
+          <h1 class="btTitle"> أشهر الأكلات الشعبية السورية</h1>
+        <P class="btText"> 
+يعتبر المطبخ السوري من المطابخ العريقة والأصيلة في الوطن العربي، ويتميّز بتنوعه نظراً لاختلاف طبيعة كل منطقة في سوريا, حيث إنّ كل مدينة من المدن السورية لها أطباق تميزها وتشتهر بها، وذلك جعل المطبخ السوري غنيّاً بمكوناته وتنوع أطباقه وحتى حلوياته أيضاً
+</P>
+           <a href="SYFood.html" class="cta">إقرأ المزيد</a>
+       
+ 
+    </div>
+    </div>
+    
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+    
+</div>
+    
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    </body>
+</html> 

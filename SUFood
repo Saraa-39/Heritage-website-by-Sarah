@@ -1,0 +1,163 @@
+<html>
+<head>
+    <title>أشهر الأكلات الشعبية السودانية</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            
+        }
+        
+        html{
+            
+        }
+        section{
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fddcc356;
+            
+        }
+        .container{
+            width:90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+        }
+        .left{
+            width:50%;
+            height: 590px;
+            background: url(./AS2.jpg) no-repeat center/cover;
+            border-radius: 8px;
+        }
+          .left1{
+            width:90px;
+            height: 600px;
+            background: url(./AS3.jpg) no-repeat center/cover;
+            border-radius: 8px;
+        }
+        .left2{
+            width:50%;
+            height: 600px;
+            background: url(./AS3.jpg) no-repeat center/cover;
+            border-radius: 8px;
+        }
+        .left3{
+            width:50%;
+            height: 550px;
+            background: url(./AS4.png) no-repeat center/cover;
+            border-radius: 8px;
+        }
+		.left4{
+            width:50%;
+            height: 550px;
+            background: url(./AS5.jpg) no-repeat center/cover;
+            border-radius: 8px;
+        }
+		
+    
+        .right{
+            width:40%;
+            min-height: 280px;
+            background-color: #2f3d3c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            border-radius: 10px;
+            color: white;
+            margin-left: -40px;
+            margin-bottom: -90px;
+			text-align: center;
+            
+        }
+        
+        .right h1{
+            font-size: 40px;
+            font-weight: lighter;
+        }
+        .right p{
+            margin:20px 0;
+            font-weight: 400;
+            line-height: 30px;   
+        }
+        
+    
+    
+    
+    
+    
+    
+    
+    </style>
+    </head>
+<body>
+    <section>
+    <div class="container">
+       <div class="left"></div> 
+        <div class="right">
+            <div class="content">
+                <h1>العصيدة السودانية</h1>
+                  
+        
+        <p>تعد العصيدة السودانية من أشهر الأطباق السودانية، وتحظى على شعبية كبيرة، وتمتاز هذه الأكلة بالسهولة في التحضير، بالإضافة إلى بساطة مكوناتها، فهي عبارة عن دقيق وملح وماء وخميرة فقط، ويمكنك إضافة مرق اللحم السوداني أو صلصة التمر الهندي فوق العصيدة عند تقديمها، وهناك أنواع أحرى من العصيدة، تصنع من التمر والدخون</p> 
+       
+            </div>
+        </div>
+        </div>
+    </section>
+    <!------------------------------------------------------>
+    
+    <section>
+    <div class="container">
+       <div class="left2"></div> 
+        <div class="right">
+            <div class="content">
+			     <h1>الكسرة</h1>
+                <p>من الأطعمة الرئيسية في السودان، وهو من أنواع الخبز المصنوع من الذرة، ويتم تقديمة مع وجبة الحساء، أو الويكة، وهي وجبة سودانية مصنوعة من البامية المفروكة
+</p>
+              
+            </div>
+        </div>
+        </div>
+    
+    </section>
+    <!--------------------------------------------->
+   
+        <section>
+    <div class="container">
+       <div class="left3"></div> 
+        <div class="right">
+            <div class="content">
+                <h1>الكمونية</h1>
+				
+        <p>من أشهر الأكلات السودانية المصنوعة من اللحوم، ويتم إعدادها بأجزاء من الأمعاء والكرش</p>      
+            </div>
+        </div>
+        </div>
+    </section>
+	<!--------------------------------------------->
+   
+        <section>
+    <div class="container">
+       <div class="left4"></div> 
+        <div class="right">
+            <div class="content">
+                <h1>مديدة الحلبة</h1>
+				
+        <p>تعد المديدة من الأكلات السودانية الشعبية، ولا يتطلب تحضيرها الكثير من الوقت، ويتكون طبق المديد من حلبة وحليب وسمن وماء ومسحوق أرز مطحون أو مسحوق كسترا</p>      
+            </div>
+        </div>
+        </div>
+    </section>  
+     
+    
+    
+    
+    
+    </body>
